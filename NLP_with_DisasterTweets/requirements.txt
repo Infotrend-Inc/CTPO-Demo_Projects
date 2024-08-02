@@ -1,0 +1,7 @@
+nltk
+xgboost
+wordcloud
+seaborn
+num2words
+pyspellchecker
+spacy
