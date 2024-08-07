@@ -2,6 +2,8 @@
 
 Examples using CTPO (CUDA, TensorFlow, PyTorch, OpenCV) as their source container.
 
+CTPO: https://github.com/Infotrend-Inc/CTPO
+
 CTPO (CUDA, TensorFlow, PyTorch, OpenCV) is a powerful environment designed to facilitate machine learning, computer vision and NLP projects. These examples have been adapted from public sources and presented as Jupyter Notebooks to demonstrate the versatility and capabilities of CTPO. Each project leverages different libraries and tools within the CTPO environment to solve domain-specific problems. This collection serves as a practical resource for developers and researchers to explore various machine learning, computer vision and NLP techniques.
 
 
@@ -25,3 +27,14 @@ CTPO (CUDA, TensorFlow, PyTorch, OpenCV) is a powerful environment designed to f
 | Natural Language Processing | Sentiment Analysis | [Sentiment_Analysis](https://github.com/Infotrend-Inc/CTPO-Tech_Projects/tree/main/Sentiment_Analysis) |
 | Natural Language Processing | Open Voice Clone | [OpenVoiceClone](https://github.com/Infotrend-Inc/CTPO-Demo_Projects/tree/main/OpenVoiceClone) |
 | Natural Language Processing | Skimming Literature | [SkimLit](https://github.com/Infotrend-Inc/CTPO-Demo_Projects/tree/main/SkimLit) |
+
+## Testing a Notebook
+
+On a system with an NVIDIA GPU and docker configured to use it, clone the repo, go into a directory with the notebook you want to try and get a ready-to-use Jupyter Notebook with CUDA, TensorFlow, PyToch and OpenCV available by:
+
+```
+docker run --rm -it --runtime nvidia --gpus all -v `pwd`:/iti -p 8888:8888 infotrend/ctpo-jupyter-cuda_tensorflow_pytorch_opencv-unraid:12.3.2_2.16.1_2.2.2_4.9.0-20240421
+```
+
+before going to http://127.0.0.1:8888/ and login using the default "iti" password.
+
